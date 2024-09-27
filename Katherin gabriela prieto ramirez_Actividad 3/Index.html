@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creatividad al Límite</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e0f7fa;
+            color: #333;
+        }
+        header {
+            background-color: #00bcd4;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #00796b;
+            padding: 0.5rem;
+        }
+        nav a {
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            display: block;
+            text-align: center;
+            font-size: 16px;
+            position: relative;
+        }
+        nav a:hover {
+            background-color: #004d40;
+        }
+        nav a .icon {
+            display: inline-block;
+            transition: transform 0.3s;
+        }
+        nav a:hover .icon {
+            transform: rotate(360deg) scale(1.2);
+        }
+        .container {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: auto;
+        }
+        h2 {
+            color: #00796b;
+            text-align: center;
+            margin-bottom: 2rem;
+            font-size: 2rem;
+        }
+        .courses {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        .course {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+            padding: 1rem;
+            transition: transform 0.3s;
+            border: 1px solid #00796b;
+            border-radius: 12px;
+        }
+        .course:hover {
+            transform: scale(1.05);
+            border-color: #00bcd4;
+        }
+        .course img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .course-content {
+            padding: 0.5rem;
+        }
+        .course-content h3 {
+            margin-top: 0;
+            color: #00796b;
+        }
+        .course-content p {
+            color: #555;
+        }
+        footer {
+            background-color: #00796b;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            position: relative;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Creatividad al Límite</h1>
+            <nav> 
+            <a href="Index.html"><i class="fas fa-rocket icon"></i> Inicio</a>
+            </nav>
+    </header>
+
+    <nav>
+        <a href="Broches.html"><i class="fas fa-rocket icon"></i> Broches</a>
+        <a href="Bisuteria.html"><i class="fas fa-globe icon"></i> Bisutería</a>
+        <a href="Manualidades.html"><i class="fas fa-child icon"></i> Manualidades</a>
+        <a href="Foamy.html"><i class="fas fa-cube icon"></i> Foamy</a>
+        <a href="Diseñadores Baby.html"><i class="fas fa-baby icon"></i> Diseñadores Baby</a>
+    </nav>
+
+    <div class="container">
+        <h2>Cursos Disponibles</h2>
+        <div class="courses">
+            <section id="broche">
+                <h3>Broches</h3>
+                <div class="course">
+                    <img src="IMG/Broche 1 .webp" alt="Curso Básico de Broches">
+                    <div class="course-content">
+                        <h3>Curso Básico de Broches</h3>
+                        <p>Aprende a crear broches simples pero elegantes con técnicas básicas y materiales accesibles.</p>
+                    </div>
+                </div>
+                <div class="course">
+                    <img src="IMG/Broche 2.webp" alt="Curso Avanzado de Broches">
+                    <div class="course-content">
+                        <h3>Curso Avanzado de Broches</h3>
+                        <p>Desarrolla tus habilidades avanzadas en la creación de broches con técnicas especializadas.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="bisuteria">
+                <h3>Bisutería</h3>
+                <div class="course">
+                    <img src="IMG/bisuteria 1 .webp" alt="Bisutería para Principiantes">
+                    <div class="course-content">
+                        <h3>Bisutería para Principiantes</h3>
+                        <p>Descubre las técnicas fundamentales de la bisutería y crea tus propias piezas únicas.</p>
+                    </div>
+                </div>
+                <div class="course">
+                    <img src="IMG/bisuteria 2.jpg" alt="Bisutería Creativa">
+                    <div class="course-content">
+                        <h3>Bisutería Creativa</h3>
+                        <p>Explora técnicas creativas y aprende a combinar materiales para diseñar bisutería innovadora.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="manualidades">
+                <h3>Manualidades</h3>
+                <div class="course">
+                    <img src="IMG/manualidades 1.jpg" alt="Manualidades Divertidas">
+                    <div class="course-content">
+                        <h3>Manualidades Divertidas</h3>
+                        <p>Proyectos creativos y entretenidos para que los niños disfruten creando arte.</p>
+                    </div>
+                </div>
+                <div class="course">
+                    <img src="IMG/manualidades 2 .webp" alt="Arte y Creatividad Infantil">
+                    <div class="course-content">
+                        <h3>Arte y Creatividad Infantil</h3>
+                        <p>Actividades diseñadas para estimular la imaginación de los más pequeños.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="foamy">
+                <h3>Foamy</h3>
+                <div class="course">
+                    <img src="IMG/goamy 1 .jpg" alt="Introducción al Arte en Foamy">
+                    <div class="course-content">
+                        <h3>Introducción al Arte en Foamy</h3>
+                        <p>Conoce las técnicas básicas para trabajar con foamy y realiza tus primeras creaciones.</p>
+                    </div>
+                </div>
+                <div class="course">
+                    <img src="IMG/goamy 2.jpg" alt="Proyectos Avanzados en Foamy">
+                    <div class="course-content">
+                        <h3>Proyectos Avanzados en Foamy</h3>
+                        <p>Desarrolla proyectos más elaborados y aprende técnicas avanzadas con foamy.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="baby">
+                <h3>Diseñadores Baby</h3>
+                <div class="course">
+                    <img src="IMG/baby 1.webp" alt="Diseño de Ropa Infantil">
+                    <div class="course-content">
+                        <h3>Diseño de Ropa Infantil</h3>
+                        <p>Aprende a diseñar y confeccionar ropa para bebés, desde patrones básicos hasta diseños únicos.</p>
+                    </div>
+                </div>
+                <div class="course">
+                    <img src="IMG/baby 2.jpg" alt="Accesorios para Bebés">
+                    <div class="course-content">
+                        <h3>Accesorios para Bebés</h3>
+                        <p>Diseña y crea accesorios adorables para bebés, desde gorros hasta pañales personalizados.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Creatividad al Límite. Todos los derechos reservados por Katherin Prieto.</p>
+    </footer>
+
+</body>
+</html>
